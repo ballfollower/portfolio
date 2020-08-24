@@ -1,11 +1,63 @@
+<!-- Background pattern taken and adjusted from Toptal Subtle Patterns -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Changa" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            background-image: url("stardust.png");
+            color: white;
+            text-align: center;
+            font-family: Changa;
+        }
+
+        #welcome-section {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .space-occupant {
+            flex: 1 1 auto;
+            height: auto;
+        }
+
+        .title {
+            flex: 0 0 auto;
+        }
+
+        h1 {
+            color: #F77;
+            font-size: 3em;
+        }
+
+        #author {
+            color: #CCF;
+            font-size: 2em;
+        }
+
+        #earth-graphics {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 20%;
+        }
+    </style>
 </head>
 <body>
-    A portfolio!
+    <img src="earth.png" alt="" id="earth-graphics">
+    <section id="welcome-section">
+        <div class="space-occupant"></div>
+        <div class="title">
+            <h1>My Web Projects</h1>
+            <p id="author">Grzegorz Kłosiński</p>
+        </div>
+        <div class="space-occupant"></div>    
+    </section>
 </body>
 </html>
