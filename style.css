@@ -41,6 +41,10 @@ body {
   color: var(--primary-color);
 }
 
+#earth-graphics {
+  z-index: -1;
+}
+
 #welcome-section {
   display: flex;
   flex-direction: column;
@@ -101,4 +105,18 @@ h1 {
 
 .project-grid img {
   width: 100%;
+}
+
+#links {
+  display: inline-block;
+
+  border: 1px solid green;
+}
+
+#links a {
+  border: 1px solid red;
+}
+
+#links img {
+  height: 25px;
 }
