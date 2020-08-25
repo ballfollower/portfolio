@@ -1,0 +1,75 @@
+body {
+  /* background-image: url("pikrepo.com.jpg"); */
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: 'GeneraleStationRegular';
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.space-occupant {
+  flex: 1 1 auto;
+  height: auto;
+}
+
+.title {
+  flex: 0 0 auto;
+}
+
+h1 {
+  color: #F77;
+  font-size: 3em;
+}
+
+#author {
+  color: #CCF;
+  font-size: 2em;
+}
+
+#earth-graphics {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+}
+
+.project-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+
+  grid-gap: 15px;
+
+  align-items: start;
+
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.screenshot {
+  background-color: #ddd;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.project-grid img {
+  width: 100%;
+}
+
+.stub img {
+  width: 70%;
+  height: 60px;
+  margin: 20px 0;
+}
