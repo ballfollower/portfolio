@@ -77,6 +77,29 @@ h1 {
   width: 20%;
 }
 
+#project-container {
+  display: flex;
+}
+
+@media (max-width: 700px){
+  #project-container {
+      flex-direction: column;
+  }
+  
+  /* .score-cell {
+      width: 100%;
+  } */
+}
+
+#filter-criteria div {  
+  background-color: white;
+  color: black;
+}
+
+#filter-criteria img {
+  height: 40px;
+}
+
 .project-grid {
   display: grid;
 
