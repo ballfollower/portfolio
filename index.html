@@ -1,63 +1,67 @@
-<!-- Background pattern taken and adjusted from Toptal Subtle Patterns -->
+<!--
+  *******
+  CREDITS
+  *******
+
+  Background pattern taken and adjusted from Toptal Subtle Patterns
+  Générale Station font by Ariel Martín Pérez
+-->
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Changa" rel="stylesheet" type="text/css">
-    <style>
-        body {
-            background-image: url("stardust.png");
-            color: white;
-            text-align: center;
-            font-family: Changa;
-        }
+  <link href="https://fonts.googleapis.com/css?family=Changa" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/generale-station" type="text/css"/>
 
-        #welcome-section {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-        }
-
-        .space-occupant {
-            flex: 1 1 auto;
-            height: auto;
-        }
-
-        .title {
-            flex: 0 0 auto;
-        }
-
-        h1 {
-            color: #F77;
-            font-size: 3em;
-        }
-
-        #author {
-            color: #CCF;
-            font-size: 2em;
-        }
-
-        #earth-graphics {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 20%;
-        }
-    </style>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <img src="earth.png" alt="" id="earth-graphics">
-    <section id="welcome-section">
-        <div class="space-occupant"></div>
-        <div class="title">
-            <h1>My Web Projects</h1>
-            <p id="author">Grzegorz Kłosiński</p>
-        </div>
-        <div class="space-occupant"></div>    
-    </section>
+  <nav id="navbar">
+    <a href="#welcome-section">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <img src="earth.png" alt="" id="earth-graphics">
+
+  <section id="welcome-section">
+    <div class="space-occupant"></div>
+    <div class="title">
+      <h1>My Web Projects</h1>
+      <p id="author">Grzegorz Kłosiński</p>
+    </div>
+    <div class="space-occupant"></div>
+  </section>
+
+  <section id="projects">
+    <div class="project-grid">
+      <div class="project-tile">
+        <a class="screenshot" href="tribute page/index.html"><img src="Tribute-to-Chopin.png"
+            alt="Tribute to Chopin screenshot."></a>
+        <div>Tribute Page</div>
+      </div>
+      <div class="project-tile">
+        <a class="screenshot" href="survey form/index.html"><img src="Survey-form.png"
+            alt="Volleyball survey screenshot"></a>
+        <div>Survey Form</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <a id="profile-link"
+      href="https://github.com/ballfollower"
+      target="_blank">GitHub
+    </a>
+  </section>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>

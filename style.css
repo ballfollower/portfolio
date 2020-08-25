@@ -1,9 +1,44 @@
+:root {
+  --primary-color: #F88;
+  --secondary-color: #CCF;
+}
+
 body {
-  /* background-image: url("pikrepo.com.jpg"); */
   background-color: black;
   color: white;
   text-align: center;
   font-family: 'GeneraleStationRegular';
+}
+
+#navbar {
+  display: table-row;
+
+  /* border: 1px solid var(--secondary-color); */
+  /* border-radius: 4px; */
+
+  position: fixed;
+  top: 8px;
+  right: 8px;
+
+  /* padding: 5px; */
+}
+
+#navbar a {
+  display: table-cell;
+
+  color: var(--secondary-color);
+
+  text-decoration: none;
+
+  padding: 0 7px;
+}
+
+#navbar a + a { 
+  border-left:1px solid var(--secondary-color); 
+}
+
+#navbar a:hover {
+  color: var(--primary-color);
 }
 
 #welcome-section {
@@ -22,7 +57,7 @@ body {
 }
 
 h1 {
-  color: #F77;
+  color: var(--primary-color);
   font-size: 3em;
 }
 
@@ -66,10 +101,4 @@ h1 {
 
 .project-grid img {
   width: 100%;
-}
-
-.stub img {
-  width: 70%;
-  height: 60px;
-  margin: 20px 0;
 }
