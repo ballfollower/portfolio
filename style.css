@@ -122,13 +122,16 @@ h1 {
 #links {
   display: inline-block;
 
-  border: 1px solid green;
+  max-width: 800px;
 }
 
 #links a {
-  border: 1px solid red;
+  text-decoration: none;
+
+  margin: 0 20px;
 }
 
 #links img {
   height: 25px;
+  vertical-align: middle;
 }
