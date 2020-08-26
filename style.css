@@ -42,13 +42,18 @@ body {
 }
 
 #earth-graphics {
-  z-index: -1;
+  z-index: 100;
 }
 
-#welcome-section {
+section {
   display: flex;
   flex-direction: column;
+
   height: 100vh;
+}
+
+section div {
+  z-index: 200;
 }
 
 .space-occupant {
@@ -56,7 +61,7 @@ body {
   height: auto;
 }
 
-.title {
+.vertically-middle {
   flex: 0 0 auto;
 }
 
@@ -77,27 +82,11 @@ h1 {
   width: 20%;
 }
 
-#project-container {
-  display: flex;
-}
+/* @media (max-width: 700px){
+} */
 
-@media (max-width: 700px){
-  #project-container {
-      flex-direction: column;
-  }
-  
-  /* .score-cell {
-      width: 100%;
-  } */
-}
-
-#filter-criteria div {  
-  background-color: white;
-  color: black;
-}
-
-#filter-criteria img {
-  height: 40px;
+#projects {
+  background: midnightblue;
 }
 
 .project-grid {
