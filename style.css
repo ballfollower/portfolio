@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #F88;
-  --secondary-color: #CCF;
+  --primary-color: orange;
+  --secondary-color: white;
 }
 
 body {
@@ -70,8 +70,11 @@ h1 {
   font-size: 3em;
 }
 
+.secondary-color {
+  color: var(--secondary-color);
+}
+
 #author {
-  color: #CCF;
   font-size: 2em;
 }
 
@@ -86,7 +89,7 @@ h1 {
 } */
 
 #projects {
-  background: midnightblue;
+  background: #003;
 }
 
 .project-grid {
@@ -98,8 +101,12 @@ h1 {
 
   align-items: start;
 
+  width: 100%;
   max-width: 500px;
-  margin: 0 auto;
+
+  color: var(--secondary-color);
+  
+  margin: 0 10px;
 }
 
 .project-tile {
