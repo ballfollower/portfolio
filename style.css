@@ -37,6 +37,20 @@ body {
   border-left:1px solid var(--secondary-color); 
 }
 
+.small-screen {
+  display: none;
+}
+
+@media (max-width: 310px){
+  .large-screen {
+    display: none;
+  }
+
+  .small-screen {
+    display: inline;
+  }
+}
+
 #navbar a:hover {
   color: var(--primary-color);
 }
@@ -52,10 +66,6 @@ section {
   background-image: url(sky-softened-stars-extracted.png);
 
   height: 100vh;
-}
-
-section div {
-  z-index: 200;
 }
 
 .space-occupant {
@@ -86,9 +96,6 @@ h1 {
   bottom: 0;
   width: 20%;
 }
-
-/* @media (max-width: 700px){
-} */
 
 #projects {
   background-color: #003;
