@@ -49,6 +49,8 @@ section {
   display: flex;
   flex-direction: column;
 
+  background-image: url(sky-softened-stars-extracted.png);
+
   height: 100vh;
 }
 
@@ -89,7 +91,7 @@ h1 {
 } */
 
 #projects {
-  background: #003;
+  background-color: #003;
 }
 
 .project-grid {
