@@ -26,10 +26,11 @@ body {
 #navbar a {
   display: table-cell;
 
+  position: relative;
+
   color: var(--secondary-color);
 
   text-decoration: none;
-
 }
 
 #navbar a + a { 
@@ -42,11 +43,25 @@ body {
 
 .small-screen {
   display: none;
+
+  height: 24px;
+
+  padding: 0 7px;
 }
 
-.small-screen img {
+.small-screen-hover {
+  display: none;
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
   height: 24px;
-  padding: 0 7px; 
+
+  padding: 0 7px;
+  
+  z-index: 101;
 }
 
 @media (max-width: 310px){
@@ -66,9 +81,9 @@ body {
     border-left: none; 
   }
 
-  /* #-icon:hover {
-    
-  } */
+  #navbar a:hover .small-screen-hover{
+    display: inline;
+  }
 }
 
 #navbar a:hover {
