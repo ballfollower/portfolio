@@ -39,8 +39,10 @@ body {
 
 .small-screen {
   display: none;
+}
 
-  font-size: 1.3em;
+.small-screen img {
+  height: 24px;
 }
 
 @media (max-width: 310px){
@@ -53,11 +55,15 @@ body {
   }
 
   #navbar {
-    top: 1px;
+    top: 5px;
   }
 
   #navbar a + a { 
     border-left: none; 
+  }
+
+  #navbar a:hover {
+    background-color: var(--primary-color);
   }
 }
 
@@ -182,4 +188,8 @@ h1 {
   /* border: 1px solid blue; */
   vertical-align: middle;
   height: 45px;
+}
+
+footer {
+  font: 15px Arial, sans-serif;
 }
