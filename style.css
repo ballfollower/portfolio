@@ -30,11 +30,14 @@ body {
 
   text-decoration: none;
 
-  padding: 0 7px;
 }
 
 #navbar a + a { 
   border-left:1px solid var(--secondary-color); 
+}
+
+.large-screen {
+  padding: 0 7px;
 }
 
 .small-screen {
@@ -43,6 +46,7 @@ body {
 
 .small-screen img {
   height: 24px;
+  padding: 0 7px; 
 }
 
 @media (max-width: 310px){
@@ -62,9 +66,9 @@ body {
     border-left: none; 
   }
 
-  #navbar a:hover {
-    background-color: var(--primary-color);
-  }
+  /* #-icon:hover {
+    
+  } */
 }
 
 #navbar a:hover {
